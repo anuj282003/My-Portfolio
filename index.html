@@ -7,17 +7,51 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="Style.css">
 
+    <style>
+  .container-right{
+    display: inline-block;
+    position: absolute;
+    font-family: "arial";
+    font-size: 24px;
+    color: red;
+    top: 16rem;
+    left: 10rem;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    }
+
+    .typed {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: typing;
+      animation-duration: 3.5s;
+      animation-timing-function: steps(30, end);
+      animation-fill-mode: forwards;
+    }
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+    </style>
 
 </head>
 <body>
 
   <div class="container">
+    
+
+
     <div class="left-container">
       <div class="profile">
         <div class="profile-pic">
       <img src="Utilities/images/Anuj'Profile.png" height="100px" width="100px" alt="Profile"/>
         </div>
       <h2>Anuj Pandey</h2>
+     
       <div class="social-link">
        <div><a href="#"><img src="Utilities/images/call-logo.png"/></a></div>
       <div><a href="#"><img src="Utilities/images/linkedin-logo.png"/></a></div>
@@ -37,9 +71,35 @@
 
     <div class="right-container">
       <div class="hero-container">
+        <div class="nav-container">
+      <div class="nav-profile">
+        <div class="profile-pic">
+      <!-- <img src="Utilities/images/Anuj'Profile.png" height="100px" width="100px" alt="Profile"/> -->
+        </div>
+      <!-- <h2>Anuj Pandey</h2> -->
+     
+      <div class="social-link">
+       <!-- <div><a href="#"><img src="Utilities/images/call-logo.png"/></a></div>
+      <div><a href="#"><img src="Utilities/images/linkedin-logo.png"/></a></div>
+      <div><a href="#"><img src="Utilities/images/gmail-logo.png"/></a></div> -->
+    </div>
+    </div>
+    <div class="nav-profile-details">
+      
+      <div><a href="#">  <p>Home</p></a></div>
+      <div><a href="#About"><p>About</p></a></div>
+      <div><a href="#Resume"><p>Resume</p></a></div>
+      <div><a href="#"><p>Project</p></a></div>
+     
+     
+    </div>
+    </div>
  
      <img src="Utilities/images/Anuj-hero1.jpg"  />
      <div class="mid-right"><h1>Anuj Pandey</h1> </div>
+     <div class="container-right">
+      <p class="typed">I am Software Engineer/JAVA Developer .</p>
+    </div>
         
       </div>
 
@@ -101,10 +161,16 @@
       <div>
         <ul>
           <li>
-            <div class="skill1"><p>JAVA</p><div class="progress">
+            <div class="skill1"><p>JAVA</p><div class="progress ">
+              <div class="progress-java">
+
+              </div>
               
             </div></div>
-            <div class="skill2"><p>HTML</p><div class="progress">
+            <div class="skill2"><p>HTML</p><div class="progress ">
+              <div class="progress-html">
+
+              </div>
 
             </div></div>
           </li>
@@ -114,10 +180,15 @@
         <ul>
           <li>
             <div class="skill1"><p>CSS</p>
-            <div class="progress">
+            <div class="progress ">
+                <div class="progress-css">
 
+                </div>
             </div></div>
-            <div class="skill2"><p>MYSQL</p><div class="progress">
+            <div class="skill2"><p>MYSQL</p><div class="progress ">
+              <div class="progress-mysql">
+
+              </div>
 
             </div></div>
           </li>
@@ -152,10 +223,12 @@
             
         <div class="project-body">
           <div class=" prjt project1">
-
+              <img src="Utilities/images/prjt1.jpg"/>
+              <h2>Hospital Management System</h2>
           </div>
           <div class="prjt project2">
-
+              <img src="Utilities/images/prjct2.jpg"/>
+              <h2>Netflix Clone</h2>
           </div>
         </div>
            
